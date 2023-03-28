@@ -75,7 +75,7 @@ const Content = () => {
             className="absolute right-1 top-[50%] text-2xl cursor-pointer"
           />
         </div>
-        <div className="flex my-10">
+        <div className="flex justify-between my-10">
           {Images.map((image, index) => (
             <img
               onClick={
@@ -86,7 +86,7 @@ const Content = () => {
               key={index}
               src={image.url}
               alt="Images"
-              className="w-[65px] h-[65px] md:w-[100px]  md:h-[100px] object-cover rounded-md mr-8 cursor-pointer active:border-2 active:border-orange-400"
+              className="w-[65px] h-[65px] md:w-[100px]  md:h-[100px] object-cover rounded-md cursor-pointer hover:opacity-80 active:border-2 active:border-orange-400"
             />
           ))}
         </div>
